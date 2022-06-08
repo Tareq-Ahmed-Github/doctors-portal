@@ -1,0 +1,5 @@
+INSTALLATION
+_______________
+react-router
+tailwind
+daisy ui
