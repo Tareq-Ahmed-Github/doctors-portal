@@ -3,6 +3,11 @@ import chair from './../../assets/images/chair.png';
 import clock from './../../assets/icons/clock.svg';
 import phone from './../../assets/icons/phone.svg';
 import marker from './../../assets/icons/marker.svg';
+import Services from './second-section/services';
+import DentalCard from './second-section/DentalCard';
+import MakeAppointment from './second-section/MakeAppointment';
+import Testimonials from './second-section/Testimonials';
+import Contact from './second-section/Contact';
 const Home = () => {
     return (
         <div>
@@ -19,8 +24,8 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='flex gap-5 mt-5'>
-                <div class="card w-96 bg-base-100 shadow-xl flex-1">
+            <div className='flex gap-5 mt-5 p-12'>
+                <div class="card w-96 shadow-xl flex-1 bg-gradient-to-r from-cyan-500 to-blue-500">
                     <figure class="px-10 pt-10">
                         <img src={clock} />
                     </figure>
@@ -29,7 +34,7 @@ const Home = () => {
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
                 </div>
-                <div class="card w-96 bg-base-100 shadow-xl flex-1">
+                <div class="card w-96 bg-base-100 shadow-xl flex-1 border-white border-2">
                     <figure class="px-10 pt-10">
                         <img src={phone} />
                     </figure>
@@ -38,7 +43,7 @@ const Home = () => {
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
                 </div>
-                <div class="card w-96 bg-base-100 shadow-xl flex-1">
+                <div class="card w-96 shadow-xl flex-1 bg-gradient-to-r from-cyan-500 to-blue-500">
                     <figure class="px-10 pt-10">
                         <img src={marker} />
                     </figure>
@@ -49,7 +54,11 @@ const Home = () => {
                 </div>
 
             </div>
-
+            <Services></Services>
+            <DentalCard></DentalCard>
+            <MakeAppointment/>
+            <Testimonials/>
+            <Contact/>
         </div>
     );
 };
