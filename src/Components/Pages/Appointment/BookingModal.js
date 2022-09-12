@@ -6,7 +6,9 @@ const BookingModal = ({setTreatment, treatment, date}) => {
     const handleForm = event =>{
         event.preventDefault();
         const slot = event.target.slot.value;
-        console.log(_id, name, slot);
+        const day = event.target.day.value;
+        console.log(_id, name, day, slot);
+        setTreatment(null);
     }
     return (
         <div>
@@ -16,7 +18,7 @@ const BookingModal = ({setTreatment, treatment, date}) => {
                             <label for="booking-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                             <h3 class="font-bold text-lg">booking for: {name}</h3>
                             <form onSubmit={handleForm} action="" className='grid grid-cols-1 gap-3 mt-3 justify-items-center'>
-                            <input disabled value={format(date, 'PP')} placeholder="Type here" className="input w-full max-w-xs" />
+                            <input name="day" disabled value={format(date, 'PP')} placeholder="Type here" className="input w-full max-w-xs" />
                             <select name="slot" className="select select-bordered w-full max-w-xs">
                                 {
                                     slots.map(slot=><option value={slot}>{slot}</option>)
