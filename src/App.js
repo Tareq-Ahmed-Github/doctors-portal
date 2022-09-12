@@ -4,7 +4,7 @@ import Navbar from './Components/Shared/Navbar';
 import Footer from './Components/Shared/Footer';
 import Home from './Components/Pages/Home/Home';
 import About from './Components/Pages/About';
-import Appointment from './Components/Pages/Appointment';
+import Appointment from './Components/Pages/Appointment/Appointment';
 function App() {
   return (
     <div className="App">

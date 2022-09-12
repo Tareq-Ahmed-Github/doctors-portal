@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const menuItems = <>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
-            <li><Link to='/appointment'>Appointment</Link></li>
-            <li><Link to='/reviews'>Reviews</Link></li>
-            <li><Link to='/contact'>Contact Us</Link></li>
-            <li><Link to='/login'>Login</Link></li>
+            <li><Link className='no-underline' to='/'>Home</Link></li>
+            <li><Link className='no-underline' to='/about'>About</Link></li>
+            <li><Link className='no-underline' to='/appointment'>Appointment</Link></li>
+            <li><Link className='no-underline' to='/reviews'>Reviews</Link></li>
+            <li><Link className='no-underline' to='/contact'>Contact Us</Link></li>
+            <li><Link className='no-underline' to='/login'>Login</Link></li>
     </>
     return (
         <div>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-slate-500">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">

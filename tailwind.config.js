@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-chair': "url('/src/Components/assets/images/chair.png')",
+        'bg-chair': "url('/src/Components/assets/images/bg.png')",
         'footer-texture': "url('/img/footer-texture.png')",
         'appointment': "url('./Components/assets/images/appointment.png')"
       }
